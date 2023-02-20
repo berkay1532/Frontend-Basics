@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms & Input</title>
+    </head>
+    <body>
+
+
+        <form>
+            <label for="name">Name</label> <br><!--Name yazısına basınca inputa giriceğimiz yere odaklaması için input id si olan "name" i for alanına yazdık-->
+            <input type="text" id="name" name="name_input"><!--Daha sonra girilen bilgiyi backend de kullanmak için name kısmını dolduruyoruz-->
+            <label for="email">Email</label> <br>
+            <input type="email" name="email" id="email">
+            <label for="password">Password</label> <br>
+            <input type="password" name="password" id="password">
+            <label for="date">Date</label> <br>
+            <input type="date" name="date" id="date">
+
+
+            <!-- Bu kısım radio button olarak 3 taneden birini seçebilceğimiz bir kısım genderlar aynı iis tek seçim yapabiliriz-->
+            Male
+            <input type="radio" name="gender" id="Male">
+            Female
+            <input type="radio" name="gender" id="Female">
+            Other 
+            <input type="radio" name="gender" id="Other">
+
+            Degree <br>
+            <select name="degree" id="degree">
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master Degree</option>
+            </select>
+
+
+            <!-- <input type="submit" value="Gönder"> -->
+            <button type="submit">Gönder</button>
+            <button type="reset">Sıfırla</button>
+        </form>
+
+
+    </body>
+</html>
